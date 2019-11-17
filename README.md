@@ -1,15 +1,17 @@
 ### Date created
-Include the date you created this project and README file.
+17 November 2019
 
 ### Project Title
-Replace the Project Title
+Project 3 - Git Python Project
 
 ### Description
-Describe what your project is about and what it does
+This is the bikeshare.py project created to pull and analyze bike share data for 3 cities.
 
 ### Files used
-Include the files used
+bikeshare.py
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Udacity Data Science Nanodegree Course (using Python)
