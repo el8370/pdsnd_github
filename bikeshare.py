@@ -1,3 +1,7 @@
+# Python Bikeshare Program
+# Elizabeth Lavallee
+# Fall 2019
+
 import time
 import pandas as pd
 import numpy as np
@@ -99,25 +103,25 @@ def load_data(city, month, day):
         df - Pandas DataFrame containing city data filtered by month and day
     """
     filename = CITY_DATA[city]
-    df = pd.read_csv(filename)
+    dFrame = pd.read_csv(filename)
 
-    df['Start Time'] = pd.to_datetime(df['Start Time'])
-    df['month'] = df['Start Time'].dt.month
-    df['day_of_week'] = df['Start Time'].dt.weekday_name
+    dFrame['Start Time'] = pd.to_datetime(dFrame['Start Time'])
+    dFrame['month'] = dFrame['Start Time'].dt.month
+    dFrame['day_of_week'] = dFrame['Start Time'].dt.weekday_name
     if month != 'all':
-        df = df[df['month'] == month_list.index(month)]
+        dFrame = dFrame[dFrame['month'] == month_list.index(month)]
         month_message = ' the month of {},'.format(month)
     else:
         month_message = ' all months,'
     if day != 'all':
-        df = df[df['day_of_week'] == day]
+        dFrame = dFrame[dFrame['day_of_week'] == day]
         day_message = ' only looking at {}s'.format(day.title())
     else:
         day_message = ' and all days of the week'
     city_message = 'For {},'.format(city.title())
     print(city_message + month_message + day_message)
 
-    return df
+    return dFrame
 
 
 def time_stats(df):
