@@ -6,7 +6,7 @@ Project 3 - Git Python Bikeshare Project
 
 ### Description
 This is the bikeshare.py project created to pull and analyze bike share data
-for Chicago, and 2 cities.
+for Chicago, New York City, and Washington.
 
 ### Files used
 bikeshare.py
