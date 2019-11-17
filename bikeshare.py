@@ -33,7 +33,7 @@ def get_filters():
             city_select = int(input('Input a number 1-3:'))
             print('\nThe city you selected is {}'.format(city_list[city_select-1]))
             ok = (input('Is this the data you want to see (Y/N)?'))
-            if ok == 'N' or ok == 'n':
+            if ok in('N','n'):
                 city_select = 10
             else:
                 city_select -= 1
